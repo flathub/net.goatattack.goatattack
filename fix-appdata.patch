@@ -1,0 +1,83 @@
+From ad71c8f3487eccd1396e491e0887f1f7e7f5fb36 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 4 Jan 2026 21:36:28 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ packages/linux/goatattack.appdata.xml | 45 +++++++++++++++++++++++++++++++++------------
+ 1 file changed, 33 insertions(+), 12 deletions(-)
+
+diff --git a/packages/linux/goatattack.appdata.xml b/packages/linux/goatattack.appdata.xml
+index 416e135..c5a1b71 100644
+--- a/packages/linux/goatattack.appdata.xml
++++ b/packages/linux/goatattack.appdata.xml
+@@ -1,33 +1,54 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<application>
+-  <id type="desktop">goatattack.desktop</id>
+-  <metadata_licence>CC-BY-SA-4.0</metadata_licence>
++<component type="desktop-application">
++  <id>goatattack.desktop</id>
++  <metadata_license>CC-BY-SA-4.0</metadata_license>
+   <project_license>GPL-3.0</project_license>
+   <name>Goat Attack</name>
+   <summary>Multiplayer Pixel Art Shooter Game</summary>
+   <summary xml:lang="de">Multiplayer Pixel Art Shooter Spiel</summary>
+   <description>
+     <p>Goat Attack is a multiplayer 2D platformer pixel art shooter game. You can play it in a local network or over the Internet. Six gameplay modes are supported. Deathmatch, team deathmatch, capture the flag, speed race, catch the coin and goat of the hill.</p>
+     <p xml:lang="de">Goat Attack ist ein Multiplayer 2D Plattformer Pixel Art Shooter Spiel. Es kann im lokalen Netzwerk oder im Internet gespielt werden. Sechs Spielmodi werden angeboten. Deathmatch, Team Deathmatch, Capture The Flag, Speed Race, Catch The Coin und Goat Of The Hill</p>
+   </description>
+   <screenshots>
+-    <screenshot type="default">https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/ctc.png</screenshot>
+-    <screenshot>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/dm.png</screenshot>
+-    <screenshot>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/ctf.png</screenshot>
+-    <screenshot>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/tdm.png</screenshot>
+-    <screenshot>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/sr.png</screenshot>
+-    <screenshot>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/goh.png</screenshot>
++    <screenshot type="default">
++      <image>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/ctc.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/dm.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/ctf.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/tdm.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/sr.png</image>
++    </screenshot>
++    <screenshot>
++      <image>https://raw.githubusercontent.com/goatattack/goatattack/master/pictures/goh.png</image>
++    </screenshot>
+   </screenshots>
+-  <url type="homepage">http://www.goatattack.net</url>
+-  <updatecontact>pw@goatattack.net</updatecontact>
++  <url type="homepage">https://www.goatattack.net</url>
++  <url type="bugtracker">https://github.com/goatattack/goatattack/issues</url>
++  <url type="vcs-browser">https://github.com/goatattack/goatattack</url>
++  <launchable type="desktop-id">goatattack.desktop</launchable>
++  <developer id="net.goatattack">
++    <name>Goat Attack </name>
++  </developer>
++  <update_contact>pw@goatattack.net</update_contact>
+   <releases>
++    <release version="0.4.5" date="2024-04-29">
++      <url>https://github.com/goatattack/goatattack/releases/tag/0.5.0</url>
++    </release>
+     <release version="0.4.5" date="2017-09-14" />
+     <release version="0.4.4" date="2016-10-02" />
+     <release version="0.4.3" date="2016-07-05" />
+     <release version="0.4.2" date="2015-09-30" />
+   </releases>
+   <content_rating type="oars-1.1">
+     <content_attribute id="violence-cartoon">moderate</content_attribute>
+     <content_attribute id="social-chat">intense</content_attribute>
+   </content_rating>
+-</application>
++</component>
+--
+libgit2 1.7.2
+

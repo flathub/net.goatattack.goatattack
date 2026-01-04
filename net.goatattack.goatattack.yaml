@@ -1,6 +1,6 @@
 app-id: net.goatattack.goatattack
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: goatattack
 rename-icon: goatattack
@@ -23,12 +23,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/goatattack/goatattack.git
-        tag: 0.4.5
-        commit: cd6652cea2690b15ef7feaf93cf261982f0da9e4
+        tag: '0.5.0'
       - type: patch
-        path: freetype.patch
-      - type: patch
-        path: appdata.patch
+        path: fix-appdata.patch
       - type: shell
         commands:
           - autoreconf -vfi;
